@@ -124,6 +124,17 @@ todo 프로젝트는 기본적인 CRUD를 구현하는 프로젝트이다.
                   - TodoListMenu
                   - TodoList
 
+UI 참고는 Bootstrap 5를 이용해서 만들 예정이다.
+
+변수를 공유 하는 방법은 다음과 같다.
+
+1. Props/Emits
+2. config.globalProperties
+3. Vuex
+4. Provide/Inject
+
+해당 과제에서는 4번을 이용할 예정이다.
+
 ## TypeScript ssc project
 
 types 프로젝트 참고
