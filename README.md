@@ -5,9 +5,10 @@ github : https://github.com/dongprojectteam/vue3_examples
 
 ## Vue3의 대표적인 기능
 
-1. Composition API
+1. [Composition API](https://kyounghwan01.github.io/blog/Vue/vue3/composition-api/#composition-api%E1%84%80%E1%85%A1-%E1%84%82%E1%85%A1%E1%84%8B%E1%85%A9%E1%84%80%E1%85%A6-%E1%84%83%E1%85%AC%E1%86%AB-%E1%84%87%E1%85%A2%E1%84%80%E1%85%A7%E1%86%BC)  
 composition API는 컴포넌트를 작성 할때 함수 기반의 방법을 제시한다.  
-특정 역할에 따른 함수의 분리를 통해 가독성이 높고 잘조직화된 코드를 만들수 있게 해준다  
+특정 역할에 따른 함수의 분리를 통해 가독성이 높고 잘조직화된 코드를 만들수 있게 해준다.  
+
 2. Suspense  
 컴포넌트가 데이터를 받아오기 전까지 기본 컨텐츠를 표시 할수 있는 기능이다  
 스켈레톤이라 불리는 UI 를 먼저 띄우고 데이터 로딩이 완료 되면 실제 화면을 띄우는 것이다.  
@@ -63,4 +64,33 @@ template script style로 나눠서 코드를 관리한다.
    10. deactivated : keep-alive로 상태가 유지되던 컴포넌트가 효력을 상실하면 호출된다.  
    11. renderTracked : 컴포넌트가 랜더링 되는 동안에 트랙킹 되는 것을 추적한다. virtual dom을 변경 시키는 것을 추적할 수 있다.
    12. renderTriggered : onMounted, onActivated, onUpdated 등의 훅이 호출되기 전에 호출된다.
-   13. errorCaptured : 컴포넌트의 랜더링 도중에 에러가 발생하면 호출된다. 이 훅은 에러를 잡아내고 에러를 처리 할 수 있다.
+   13. errorCaptured : 컴포넌트의 랜더링 도중에 에러가 발생하면 호출된다. 이 훅은 에러를 잡아내고 에러를 처리 할 수 있다.  
+3. 선언적 랜더링  
+변수를 선언하고 값을 넣으면 자동으로 DOM에 업데이트가 된다. 예시는 아래와 같다.
+        
+        
+        <template>
+        <div>
+            <h1>{{ title }}</h1>
+            <p>{{ message }}</p>
+        </div>
+        </template>
+        
+        <script>
+        export default {
+        data() {
+            return {
+            title: 'Hello Vue',
+            message: 'Hello Vue'
+            }
+        }
+        }
+        </script>
+4. 컴포넌트 생성  
+하나의 커다란 어플리케이션을 작은 요소로 분해해 은닉화를 하고 재사용성을 가지게 한다. createApp 함수를 이용해서 생성된 Vue 애플리케이션 인스턴스를 참조해야 한다.
+      import { createApp } from 'vue'
+      const app = createApp({})
+  
+
+## Basic project  
+실습 예제 기본 문법 테스트 프로젝트
