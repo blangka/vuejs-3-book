@@ -1,10 +1,16 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
+    <router-link to="/">Home</router-link>
+    |
+    <router-link to="/about">About</router-link>
+    |
     <router-link to="/test">Test</router-link>
+    |
+    <router-link to="/button">Button</router-link>
+    |
+    <router-link to="/table">Table</router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style>

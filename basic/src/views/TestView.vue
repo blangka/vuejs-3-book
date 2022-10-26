@@ -22,6 +22,13 @@
       {{ country }}
     </option>
   </select>
+  <br />
+  <!-- 실전 Prcatice 해답 -->
+  날짜 : <input type="date" v-model="result.date" /><br />
+  시간 : <input type="time" v-model="result.time" /><br />
+  색깔 : <input type="color" v-model="result.color" /><br />
+  범위 : <input type="range" min="1" max="100" v-model="result.range" /><br />
+  <br />
   <div>
     <h3>결과</h3>
     <hr />
@@ -43,6 +50,12 @@ export default {
     const countryOptions = ["한국", "미국", "중국", "일본", "기타"];
     const hobbyOptions = ["스포츠", "음악감상", "영화감상", "독서", "여행"];
 
+    // Practice를 위한 변수 선언
+    const date = "";
+    const time = "";
+    const color = "#ffffff";
+    const range = 1;
+
     const result = reactive({
       name,
       age,
@@ -50,6 +63,10 @@ export default {
       hobby,
       password,
       country,
+      date,
+      time,
+      color,
+      range,
     });
     return {
       result,

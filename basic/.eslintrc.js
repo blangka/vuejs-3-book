@@ -14,5 +14,6 @@ module.exports = {
     "import/extensions": ["off"],
     quotes: ["off", "single"],
     "vuejs-accessibility/label-has-for": ["off"],
+    "max-len": ["off"],
   },
 };
