@@ -3,6 +3,19 @@
 [한 권으로 배우는 vue3](http://www.yes24.com/Product/Goods/103336234) 를 학습하기 위한 프로젝트  
 github : https://github.com/dongprojectteam/vue3_examples
 
+## vue chrome에서 디버깅 하는 법
+
+vue.config.js에서 devtool 추가
+
+```js
+module.exports = defineConfig({
+    transpileDependencies: true,
+    configureWebpack: {
+        devtool: "source-map",
+    },
+});
+```
+
 ## Vue3의 대표적인 기능
 
 1. [Composition API](https://kyounghwan01.github.io/blog/Vue/vue3/composition-api/#composition-api%E1%84%80%E1%85%A1-%E1%84%82%E1%85%A1%E1%84%8B%E1%85%A9%E1%84%80%E1%85%A6-%E1%84%83%E1%85%AC%E1%86%AB-%E1%84%87%E1%85%A2%E1%84%80%E1%85%A7%E1%86%BC)  
@@ -133,7 +146,8 @@ UI 참고는 Bootstrap 5를 이용해서 만들 예정이다.
 3. Vuex
 4. Provide/Inject
 
-해당 과제에서는 4번을 이용할 예정이다.
+해당 과제에서는 4번을 이용할 예정이다.  
+[참고 자료](https://v3.ko.vuejs.org/guide/component-provide-inject.html)
 
 ## TypeScript ssc project
 
