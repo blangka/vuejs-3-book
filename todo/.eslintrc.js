@@ -15,5 +15,7 @@ module.exports = {
     quotes: ["off", "single"],
     "vuejs-accessibility/label-has-for": ["off"],
     "max-len": ["off"],
+    "import/prefer-default-export": ["off"],
+    "vue/valid-template-root": "off",
   },
 };
