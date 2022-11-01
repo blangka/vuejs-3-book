@@ -138,6 +138,7 @@ todo 프로젝트는 기본적인 CRUD를 구현하는 프로젝트이다.
                   - TodoList
 
 UI 참고는 Bootstrap 5를 이용해서 만들 예정이다.
+(https://getbootstrap.kr/docs/5.0/components/buttons/)
 
 변수를 공유 하는 방법은 다음과 같다.
 
@@ -146,8 +147,26 @@ UI 참고는 Bootstrap 5를 이용해서 만들 예정이다.
 3. Vuex
 4. Provide/Inject
 
-해당 과제에서는 4번을 이용할 예정이다.  
+해당 과제에서는 4번을 이용할 예정이다.
+
+TodoListMenu 에서는 [computed](https://goodteacher.tistory.com/541) 를 이용하였다  
+로직을 가지고 계산후 값을 리턴하는 경우를 computed 라고 한다.  
+watch 로 데이터 값이 변경 되면 동작하게 되는 것이다.  
+그러면 언제 watch를 쓰고 언제
+computed를 쓰는가?  
+computed는 템플릿 내의 값이 data와 종속되었을 경우 사용하는게 유리합니다.왜냐하면 같은 경우에 watch를 사용하면 중복 호출하거나, 코드가 복잡해주기 때문입니다. 또한 computed의 값은 캐싱되기
+때문에, 리렌더링 됬을 때, 같은 값이 들어왔다면 연산하지 않습니다. 그에 반해 watch는 같은 값이여도 연산을 다시 합니다. 컴포넌트가 리렌더링이 많이 되나, 값이 바뀔일이 없다면 computed를 필히
+써야합니다.
+
+watch는 지정한 값이 변경된 시점에서 내가 원하는 액션(api call, route.push())을 하기 원할 때 사용합니다.  
+watch( source, callback, options)
+
+[emit](https://webruden.tistory.com/925)
+부모와 자식간의 event 전달시에 사용
+
 [참고 자료](https://v3.ko.vuejs.org/guide/component-provide-inject.html)
+
+TODO LIST 추가 및 필터 작업을 통해 동작 원리 파악 및 필터링을 사용하였고 부모와 자식간의 이벤트 전달에 대해서 알아 보았습니다.
 
 ## TypeScript ssc project
 
