@@ -171,3 +171,37 @@ TODO LIST 추가 및 필터 작업을 통해 동작 원리 파악 및 필터링�
 ## TypeScript ssc project
 
 types 프로젝트 참고
+
+## WebApplication
+
+webapplication 프로젝트 참고
+
+필수적인 요소들을 설치하고 구현하며 다양한 기능을 수행해보기 위해 만든 프로젝트
+
+NavBar.vue  
+bootstrap 이 제공하는 me-auto 클래스는 해당 클래스가 쓰인 태그와 다음에 나오는 태그의 간격을 자동으로 간은 간격으로 정렬한다.   
+me-auto 는 e는 end s는 start를 의미 한다.
+
+options api 생명 주기 vs 컴포지션 api 의 생명 주기
+
+| Options API의 생명주기 | 컴포지션 API의 생명 주기   |
+|-------------------|-------------------|
+| beforeCreate      | setup             |
+| created           |                   |
+| beforeMount       | onBeforeMount     |
+| mounted           | onMounted         |
+| beforeUpdate      | onBeforeUpdate    |
+| updated           | onUpdated         |
+| beforeUnmount     | onBeforeUnmount   |
+| unmounted         | onUnmounted       |
+| errorCaptured     | onErrorCaptured   |
+| renderTracked     | onRenderTracked   |
+| renderTriggered   | onRenderTriggered |
+
+## database
+
+sql lite를 활용하여 데이터베이스를 구축하고 데이터를 저장하고 불러오는 방법을 배웠습니다.
+
+database 프로젝트 참고
+
+
